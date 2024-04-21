@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remita Payment Gateway Simulation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* background-color: #f0f0f0; */
+        background-image: url(images/purple.jpg);
+        background-size: cover;
+    }
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="submit"]
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #054210;
+    }
+
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Remita Payment Gateway Simulation</h2>
+    <form id="paymentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="First name Last name" required>
+        
+        <label for="email">Student email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cardnumber">Card Number</label>
+        <input type="number" id="num" name="number" required>
+        
+        
+        
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="39900" name="amount" required>
+
+        <label for="password">Card Pin</label>
+        <input type="password" id="number" name="number" required>
+        
+        <!-- Add more fields as needed -->
+<br><br>
+       <input type="submit" value="submit">
+    </form>
+</div>
+
+<script>document.getElementById("paymentForm").addEventListener("submit", function(event){
+    event.preventDefault(); // Prevent the default form submission
+
+    // Retrieve input values
+    var num = document.getElementById("number").value;
+    var amount = document.getElementById("amount").value;
+    
+
+    // Validate inputs
+
+    if(number === "" && amount === ""  ) {
+        alert("Please enter correct pin and Amount");
+        return;
+    }
+
+    if(number !== "1212" && amount !== "39900") {
+        alert("Invalid Payment!");
+      
+    } 
+
+    // Perform login securely
+     // Example: Mock login logic
+     if(number === "1212" || amount === "39900") {
+        alert("Payment Successful!");
+        window.location.href = "Coursereg.html";
+        // Redirect to another page or perform any other action upon successful login
+    } 
+
+    
+
+
+      
+});
+</script>
+</body>
+</html>

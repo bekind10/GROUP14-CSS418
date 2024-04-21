@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {text-align: center;
+            display: list-item;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            padding: auto;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            background-image: url(/images/purple.jpg);
+            background-size: cover;
+
+        }
+
+        .container {
+            margin: auto;
+            background-color: #926087;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 20%;
+
+        }
+
+        .animated-text {
+    animation: slideIn 3s ease infinite;
+    color: white;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-10px);
+        opacity: 7;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .redd{
+    color: rgb(218, 8, 8);
+    font-size: small;
+}
+h1{
+    color: azure;
+}
+h2{
+    color: #ebd2e5;
+}
+    </style>
+</head>
+<body>
+    <h1>Futminna Student Portal</h1>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+            <p class="redd">Forgot Password</p>
+        </form>
+    </div>
+    <h4 class="animated-text">Welcome to Our Website</h4>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event){
+            event.preventDefault(); // Prevent the default form submission
+
+            // Retrieve input values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Validate inputs
+        
+            if(username === "" || password === "") {
+                alert("Please enter both username and password.");
+                return;
+            }
+
+            // Perform login securely
+             // Example: Mock login logic
+             if(username === "user" && password === "password") {
+                alert("Login successful!");
+                window.location.href = "home.html";
+                // Redirect to another page or perform any other action upon successful login
+            } 
+            else {
+                alert("Invalid username or password. Please try again.");
+            }
+      
+              
+        });
+    </script>
+
+</body>
+</html>

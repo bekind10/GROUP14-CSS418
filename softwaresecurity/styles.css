@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+header {
+  /* background-color: #5b0d5e; */
+  background-image: url(/images/purple.jpg);
+  background-size: cover;
+  color: #cf9800;
+  padding: 20px 0;
+  text-align: center;
+}
+
+p {
+  font-size: x-small;
+}
+
+h1 {
+  color: #e7b21f;
+}
+
+
+
+/* .pay {
+  font-style: italic;
+  font-family: monospace;
+  font-weight: bolder;
+  color: #fcfcfc;
+
+} */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logout-btn {
+  background-color: #1b88e0d5;
+  color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: right;
+  margin-left: 55%;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+
+}
+
+
+form {
+  margin: 20px;
+}
+
+#submitButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submitButton:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#myForm {
+
+  text-align: center;
+
+
+}
+
+.dropbtn {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Registration</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="test.css">
+
+</head>
+<body>
+  <header>
+    <h1> Course Registration Portal</h1><br><br>
+    <nav>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="./remita.html">Payments</a></li>
+            <li><a href="#">News</a></li><br><br>
+            <div class="pay"><input type="checkbox" id="agreeCheckbox"> Tick here to Confirm payment and proceed</div>
+            <button  class="logout-btn" onclick="logout()">Logout</button>
+
+        </ul>
+        
+    </nav>
+</header>
+  <form id="myForm">
+   
+   <br> <p></p><br><br>
+    
+   
+   <div class="dropdown">
+      <button onclick="toggleDropdown()" class="dropbtn">Select Courses</button>
+      <div id="checkboxes" class="dropdown-content">
+        <p>100 LEVEL FIRST SEMESTER </p>
+        <input type="checkbox" id="item1" name="items" value="Mat111">
+        <label for="item1">Mat111</label><br>
+        <input type="checkbox" id="item2" name="items" value="Sta108">
+        <label for="item2">Sta108</label><br>
+        <input type="checkbox" id="item3" name="items" value="Gst100">
+        <label for="item3">Gst100</label><br>
+        <input type="checkbox" id="item3" name="items" value="chem111">
+        <label for="item3">chem111</label><br>
+        <input type="checkbox" id="item3" name="items" value="Bio100">
+        <label for="item3">Bio100</label><br>
+        <input type="checkbox" id="item3" name="items" value="Cpt101">
+        <label for="item3">Cpt101</label><br>
+        <input type="checkbox" id="item3" name="items" value="css110">
+        <label for="item3">css110</label><br>
+        <input type="checkbox" id="item3" name="items" value="Mat101">
+        <label for="item3">Mat101</label><br>
+        
+        <br><p>100 LEVEL SECOND SEMESTER</p>
+        <input type="checkbox" id="item1" name="items" value="Mat111">
+        <label for="item1">Mat121</label><br>
+        <input type="checkbox" id="item2" name="items" value="Sta108">
+        <label for="item2">Sta128</label><br>
+        <input type="checkbox" id="item3" name="items" value="Gst100">
+        <label for="item3">Gst120</label><br>
+        <input type="checkbox" id="item3" name="items" value="chem111">
+        <label for="item3">chem121</label><br>
+        <input type="checkbox" id="item3" name="items" value="Bio100">
+        <label for="item3">Bio120</label><br>
+        <input type="checkbox" id="item3" name="items" value="Cpt101">
+        <label for="item3">Cpt121</label><br>
+        <input type="checkbox" id="item3" name="items" value="css110">
+        <label for="item3">css120</label><br>
+        <input type="checkbox" id="item3" name="items" value="Mat101">
+        <label for="item3">Mat123</label><br>
+        <input type="checkbox" id="item3" name="items" value="Gst110">
+        <label for="item3">Gst120</label><br>
+      </div>
+    </div>   
+    <br>
+   <br><hr>
+    <button type="submit" id="submitButton" >Submit</button>
+  </form>
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+  <div id="selectedItems"></div>
+  <br><br><br><br><br><br>
+  <footer>
+    <p>&copy; Group 14. All rights reserved.</p>
+  </footer>
+  <script src="cr.js"></script>
+ 
+</body>
+
+</html>
